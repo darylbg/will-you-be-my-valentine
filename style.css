@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Knewave&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.knewave-regular {
+  font-family: "Knewave", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --burgundy: #800020;
+  --darker-burgundy: #69031d;
+  --white: #fff;
+  --lemonish: #FFF9C5;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+/* page 2 */
+
+.page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page2-main-content {
+    max-width: 500px;
+    margin: 0 40px;
+}
+
+.main-img1 {
+    display: flex;
+}
+
+.main-img1 img {
+    width: 100%;
+    height: auto;
+}
+
+.main-img2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-img2 img {
+    max-height: 60px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.main-text p {
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--burgundy);
+    font-size: 1.5em;
+}
+
+/* page 1 */
+
+.page1,
+.page2 {
+    height: 100%;
+    min-width: 100%;
+    background-image: url("./media/background1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .page1-img img {
+    height: 300px;
+  }
+  
+  .page1_text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 2em;
+    color: #800020;
+  }
+  
+  .page1_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  
+  .page1_buttons button {
+    background-color: var(--burgundy);
+    color: var(--white);
+    border: none;
+    padding: 10px 35px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 4px;
+  }
+  
+  .page1_buttons button:hover {
+    cursor: pointer;
+    background-color: var(--darker-burgundy);
+    transition: all ease-in-out 0.2s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .page1_text {
+      font-size: 1.5em;
+    }
+
+    /* page 2 */
+
+    .main-text p {
+        font-size: 1.1em;
+    }
+  }
+
+  .yippie {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12em;
+    color: var(--burgundy);
+    opacity: 50%;
+    /* z-index: ; */
+    transform: rotate(-35deg);
+  }
+
+  .nyam-cat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* height: 100px; */
+  }
+
+  .choopie-cat {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+  }
+
+  .sleepy-cat {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .spank-cat {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+
+  /* media queries */
+  
+  @media screen and (max-width: 400px) {
+    .page1-img img {
+      height: 200px;
+    }
+  
+    .page1_text {
+      font-size: 1em;
+    }
+  
+    .page1_buttons {
+      gap: 20px;
+    }
+  
+    .page1_buttons button {
+      padding: 8px 30px;
+    }
+
+    /* page 2 */
+
+    .page2-main-content {
+        margin: 0 10px;
+    }
+
+    .main-text p {
+        font-size: 0.8em;
+    }
+  }
