@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <!-- <div class="page1">
+    <div class="page1" id="page1" style="display: flex">
       <div class="page1-img">
         <img
           src="https://media.discordapp.net/attachments/1156211445655154688/1202019249410027540/bg_f8f8f8-flat_750x_075_f-pad_750x1000_f8f8f8-removebg-preview.png?ex=65cbeea9&is=65b979a9&hm=53a49b875fdce1e9492c077222fcde098eaf4dec8ff2056259e4b9968ef06df3&=&format=webp&quality=lossless"
@@ -15,41 +15,94 @@
         />
       </div>
       <div class="page1_text">
-        <p>Will you be my VALENTINE?</p>
+        <p id="main-text-p">Will you be my VALENTINE?</p>
       </div>
       <div class="page1_buttons">
-        <button class="page1-button">Yes</button>
-        <button class="page1-button">No</button>
-      </div> -->
+        <button class="page1-button" id="yes_button">Yes</button>
+        <button class="page1-button" id="no_button">No</button>
+      </div>
     </div>
-    <div class="page2">
-        <div class="page2-main-content">
-            <div class="main-img1">
-                <img src="https://media.discordapp.net/attachments/1156211445655154688/1202026903582806107/main.jpg?ex=65cbf5ca&is=65b980ca&hm=837db845472d53ad03ad048e1f44b9d39a54eed62a4bfca63c776bc08889ad3a&=&format=webp" alt="main img">
-            </div>
-            <div class="main-img2">
-                <img src="https://media.discordapp.net/attachments/1156211445655154688/1202030831124889632/cherries.png?ex=65cbf972&is=65b98472&hm=341f6741b59de2688938808466f816a7c39674dbe39774998e1eb21ea981bf88&=&format=webp&quality=lossless" alt="cherries image">
-            </div>
-            <div class="main-text">
-                <p>thank you for being my Valentine Ria :3</p>
-            </div>
+    <div class="page2" id="page2" style="display: none">
+      <div class="page2-main-content">
+        <div class="main-img1">
+          <img
+            src="https://media.discordapp.net/attachments/1156211445655154688/1202026903582806107/main.jpg?ex=65cbf5ca&is=65b980ca&hm=837db845472d53ad03ad048e1f44b9d39a54eed62a4bfca63c776bc08889ad3a&=&format=webp"
+            alt="main img"
+          />
         </div>
-        <div class="yippie">
-            <p>YIPPIE!!!</p>
+        <div class="main-img2">
+          <img
+            src="https://media.discordapp.net/attachments/1156211445655154688/1202030831124889632/cherries.png?ex=65cbf972&is=65b98472&hm=341f6741b59de2688938808466f816a7c39674dbe39774998e1eb21ea981bf88&=&format=webp&quality=lossless"
+            alt="cherries image"
+          />
         </div>
-        <div class="nyam-cat">
-            <img src="https://media.discordapp.net/attachments/1156211445655154688/1202032700563935352/nyan-cat.gif?ex=65cbfb30&is=65b98630&hm=599f18cc77ade9299da448c3055216e3a35da0780bfbebc8043e8388287fbd60&=&width=1440&height=460" alt="">
+        <div class="main-text">
+          <p>thank you for being my Valentine Ria :3</p>
         </div>
-        <div class="choopie-cat">
-            <img src="https://media.discordapp.net/attachments/1156211445655154688/1202033574430117938/choopie_cat.gif?ex=65cbfc00&is=65b98700&hm=a8f6ad8536b3b65decfeaa3d2a5356bcf4ce22b8e518de01bffe1945f689f77d&=" alt="">
-        </div>
-        <div class="sleepy-cat">
-            <img src="https://media.discordapp.net/attachments/1156211445655154688/1202033723399213096/8e9be9c70f720fa05ea0c7f39fed3cf9.gif?ex=65cbfc24&is=65b98724&hm=7646ef5493001b5af3f91a945ee3118071dd8ce5c2998dc8b99c91c9f63657cf&=" alt="">
-        </div>
-        <div class="spank-cat">
-            <img src="https://media.discordapp.net/attachments/1156211445655154688/1202033722984255489/cute-cat.gif?ex=65cbfc24&is=65b98724&hm=8a846091421596ebe3555324047034417ee00b1fa17a84fb92b187e289e42fca&=" alt="">
-        </div>
+      </div>
+      <p class="yippie">YIPPIE!!!</p>
+      <img
+        class="nyam-cat"
+        src="https://media.discordapp.net/attachments/1156211445655154688/1202032700563935352/nyan-cat.gif?ex=65cbfb30&is=65b98630&hm=599f18cc77ade9299da448c3055216e3a35da0780bfbebc8043e8388287fbd60&=&width=1440&height=460"
+        alt=""
+      />
+      <img
+        class="choopie-cat"
+        src="https://media.discordapp.net/attachments/1156211445655154688/1202033574430117938/choopie_cat.gif?ex=65cbfc00&is=65b98700&hm=a8f6ad8536b3b65decfeaa3d2a5356bcf4ce22b8e518de01bffe1945f689f77d&="
+        alt=""
+      />
+      <img
+        class="sleepy-cat"
+        src="https://media.discordapp.net/attachments/1156211445655154688/1202033723399213096/8e9be9c70f720fa05ea0c7f39fed3cf9.gif?ex=65cbfc24&is=65b98724&hm=7646ef5493001b5af3f91a945ee3118071dd8ce5c2998dc8b99c91c9f63657cf&="
+        alt=""
+      />
+      <img
+        class="spank-cat"
+        src="https://media.discordapp.net/attachments/1156211445655154688/1202033722984255489/cute-cat.gif?ex=65cbfc24&is=65b98724&hm=8a846091421596ebe3555324047034417ee00b1fa17a84fb92b187e289e42fca&="
+        alt=""
+      />
     </div>
-    <script></script>
+    <script>
+      yesBtnEl = document.getElementById("yes_button");
+      noBtnEl = document.getElementById("no_button");
+      page1El = document.getElementById("page1");
+      page2El = document.getElementById("page2");
+      mainTextPEl = document.getElementById("main-text-p");
+
+      yesBtnEl.addEventListener("click", function () {
+        page1El.style.display = "none";
+        page2El.style.display = "flex";
+      });
+
+      noBtnEl.addEventListener("click", function () {
+        noBtnEl.style.display = "none";
+        mainTextPEl.textContent = "Try again :{";
+      });
+
+      let isFirstHover = true;
+
+      function moveOnHover() {
+        if (isFirstHover) {
+          noBtnEl.style.position = "absolute";
+          isFirstHover = false;
+        }
+
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        const newX = Math.floor(
+          Math.random() * (windowWidth - noBtnEl.offsetWidth)
+        );
+        const newY = Math.floor(
+          Math.random() * (windowHeight - noBtnEl.offsetHeight)
+        );
+
+        noBtnEl.style.left = newX + "px";
+        noBtnEl.style.top = newY + "px";
+        console.log(newX, newY);
+      }
+
+      noBtnEl.addEventListener("mouseover", moveOnHover);
+    </script>
   </body>
 </html>
