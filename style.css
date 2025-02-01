@@ -68,7 +68,7 @@ body {
 
 .main-text {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -167,7 +167,8 @@ body {
   gap: 40px;
 }
 
-.page1_buttons button {
+.page1_buttons button,
+.play-game-button {
   background-color: var(--burgundy);
   color: var(--white);
   border: none;
@@ -177,9 +178,11 @@ body {
   font-weight: 400;
   font-style: normal;
   border-radius: 4px;
+  text-decoration: none;
 }
 
-.page1_buttons button:hover {
+.page1_buttons button:hover,
+.play-game-button:hover {
   cursor: pointer;
   background-color: var(--darker-burgundy);
   transition: all ease-in-out 0.2s;
